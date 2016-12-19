@@ -4,20 +4,20 @@ environment_variables:
  JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
 phases:
  install:
- commands:
- - apt-get update -y
- - apt-get install -y maven
+  commands:
+   - apt-get update -y
+   - apt-get install -y maven
  pre_build:
- commands:
- - echo Nothing to do in the pre_build phase...
+  commands:
+   - echo Nothing to do in the pre_build phase...
  build:
- commands:
- - echo Build started on 'date'
- - mvn install
+  commands:
+   - echo Build started on 'date'
+   - mvn install
  post_build:
- commands:
- - echo Build completed on 'date'
+  commands:
+   - echo Build completed on 'date'
 artifacts:
  files:
- - target/my-web-app.war
+  - target/my-web-app.war
  discard-paths: yes
