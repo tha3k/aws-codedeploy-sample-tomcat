@@ -19,6 +19,5 @@ phases:
  - echo Build completed on `date`
 artifacts:
  files:
-- target/TEST-1.0.war
+ - target/messageUtil-1.0.jar
  discard-paths: yes
- 
