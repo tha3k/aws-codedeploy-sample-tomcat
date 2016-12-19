@@ -20,5 +20,4 @@ phases:
 artifacts:
  files:
  - target/my-web-app.war
- - move-war.sh
  discard-paths: yes
